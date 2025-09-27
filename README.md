@@ -25,9 +25,30 @@ Sigue estos pasos para poner en marcha la aplicación:
 Asegúrate de tener instalado **Composer**, **PHP** (versión indicada arriba) y **Git**.
 
 ### 1. Clonar el Repositorio
-
 Abre tu terminal y ejecuta el siguiente comando:
 
-```bash
+`bash`
 git clone https://github.com/erick-gape/miniapp_laravel.git
 cd formulario-contacto
+
+### 2. Instalar Dependencias
+Instala todas las dependencias de Laravel usando Composer:
+
+`bash`
+composer install
+
+### 3. Configuración del Entorno
+
+### a) Copia el archivo de configuración de entorno:
+`bash`
+cp .env.example .env
+
+### b) Genera la clave de aplicación de Laravel (App Key):
+`bash`
+php artisan key:generate
+
+### 4. Ejecutar el Servidor
+Inicia el servidor de desarrollo de Laravel:
+
+`bash`
+php artisan serve
